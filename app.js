@@ -112,5 +112,5 @@
     return {store, render};
   }
   global.BookLending = Object.freeze({Store, mount, status});
-  document.querySelectorAll('[data-book-tracker]').forEach(mount);
+  // The consumer initializes the library with BookLending.mount(root).
 })(window);
